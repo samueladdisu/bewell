@@ -1,0 +1,9 @@
+@import "reboot";
+@import "mixins";
+@import "utilities";
+
+div[class^="col-"] , .col{
+  background: lightblue;
+  padding: 1rem 0;
+  text-align: center;
+}

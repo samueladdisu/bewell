@@ -1,9 +1,131 @@
+$font: 'Inter', sans-serif;
 @import "reboot";
 @import "mixins";
 @import "utilities";
 
 div[class^="col-"] , .col{
-  background: lightblue;
   padding: 1rem 0;
+}
+.section-title{
+  font-size: 36px;
+  text-transform: capitalize;
+  color: $secondary-color;
+  letter-spacing: -0.05em;
+}
+header{
+  position: relative;
+  height: 90vh;
+}
+.banner{
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: url('../img/banner.jpg');
+  background-position:  top center;
+  background-size: cover;
+}
+.banner::after{
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.37);
+}
+
+nav{
+  position: relative;
+  .container{
+    .nav-header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 31px;
+    }
+  }
+}
+.links-container{
+  background: #fff;
+  padding: 15px 15px;
+  visibility: hidden;
+  .nav-links{
+    li{
+      padding: 5px 0;
+    }
+  }
+}
+.show-links{
+  visibility: visible;
+}
+.hero{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  // align-items: center;
   text-align: center;
+  z-index: 999;
+}
+.headline{
+  .subtitle{
+    font-size: 18px;
+    color: $light-color;
+  }
+  .title{
+    font-size: 52px;
+    color: #fff;
+    width: 378px;
+  }
+  a{
+    font-size: 12px;
+  }
+}  
+.about-us{
+  
+  .about-img{
+    width: 100%;
+    height: 350px;
+    background: url('../img/truck-image.png');
+    background-position: center center;
+    background-size: cover;
+    margin-top: -28px;
+    z-index: 1000;
+  }
+  .about-content{
+    margin-top: 86px;
+    position: relative;
+    
+    .about-paragraph{
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 32px;
+      letter-spacing: -0.05em;
+      text-transform: capitalize;
+      padding-bottom: 25px;
+    }
+    .about-btn{
+    
+      text-align: center;
+    }
+    .grahic{
+      position: absolute;
+      top: -140px;
+      right: 0px;
+      z-index: -1;
+    }
+  }
+}
+
+.products{
+  margin-top: 10rem;
+  .container{
+    .product-title{
+      text-align: center;
+    }
+  }
 }

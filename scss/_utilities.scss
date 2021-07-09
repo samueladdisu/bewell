@@ -1,16 +1,24 @@
+// font family
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
 // Variables 
 
 $columns: 12;
-$primary-color: #007bc3;
-$secondary-color: #222;
+$primary-color: #DF362F;
+$secondary-color: #3C3A3F;
+$primary-dark-color: #C85D67;
+$light-color: #D2D7D1;
+
+
 
 // Gird system
 .container {
   width: 100% - 10%;
   // max-width: 1200px;
-  background-color: lightblue;
   margin: 0 auto;
-  overflow: auto;
+  overflow: hidden;
+  font-family: $font;
 }
 .row {
   display: flex;
@@ -97,10 +105,28 @@ $secondary-color: #222;
   font-size: 1rem;
   // border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
 }
 .btn-primary {
   background: $primary-color;
   color: #fff;
+  border-color: $primary-color;
+}
+.btn-rounded{
+  border-radius: 48px;
+  font-family: $font;
+  font-size: 15px;
+}
+.btn-rounded-primary{
+  @extend .btn-rounded;
+  background: $primary-color;
+  color: #fff;
+  margin-bottom: 5px;
+}
+.btn-rounded-outline-primary{
+  @extend .btn-rounded;
+  background: transparent;
+  color: $primary-color;
   border-color: $primary-color;
 }
 .btn-secondary {

@@ -121,7 +121,6 @@ $light-color: #D2D7D1;
   @extend .btn-rounded;
   background: $primary-color;
   color: #fff;
-  margin-bottom: 5px;
 }
 .btn-rounded-outline-primary{
   @extend .btn-rounded;
@@ -137,4 +136,7 @@ $light-color: #D2D7D1;
   background: transparent;
   color: $primary-color;
   border-color: $primary-color;
+}
+.text-center{
+  text-align: center;
 }

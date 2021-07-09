@@ -305,6 +305,7 @@ template {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
+  letter-spacing: -0.05em;
 }
 
 .container {
@@ -751,7 +752,6 @@ h1 {
 .btn-rounded-primary {
   background: #DF362F;
   color: #fff;
-  margin-bottom: 5px;
 }
 
 .btn-rounded-outline-primary {
@@ -771,15 +771,18 @@ h1 {
   border-color: #DF362F;
 }
 
+.text-center {
+  text-align: center;
+}
+
 div[class^="col-"], .col {
   padding: 1rem 0;
 }
 
 .section-title {
-  font-size: 36px;
+  font-size: 2.25rem;
   text-transform: capitalize;
   color: #3C3A3F;
-  letter-spacing: -0.05em;
 }
 
 header {
@@ -818,17 +821,17 @@ nav .container .nav-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 31px;
+  padding-top: 1.94rem;
 }
 
 .links-container {
   background: #fff;
-  padding: 15px 15px;
+  padding: 0.94rem 0.94rem;
   visibility: hidden;
 }
 
 .links-container .nav-links li {
-  padding: 5px 0;
+  padding: 0.31rem 0;
 }
 
 .show-links {
@@ -845,42 +848,42 @@ nav .container .nav-header {
 }
 
 .headline .subtitle {
-  font-size: 18px;
+  font-size: 1.13rem;
   color: #D2D7D1;
 }
 
 .headline .title {
-  font-size: 52px;
+  font-size: 3.25rem;
   color: #fff;
   width: 378px;
 }
 
 .headline a {
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .about-us .about-img {
   width: 100%;
-  height: 350px;
+  height: 21.88rem;
   background: url("../img/truck-image.png");
   background-position: center center;
   background-size: cover;
-  margin-top: -28px;
+  margin-top: -1.75rem;
   z-index: 1000;
 }
 
 .about-us .about-content {
-  margin-top: 86px;
+  margin-top: 5.36rem;
   position: relative;
 }
 
 .about-us .about-content .about-paragraph {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 32px;
+  line-height: 2rem;
   letter-spacing: -0.05em;
   text-transform: capitalize;
-  padding-bottom: 25px;
+  padding-bottom: 1.56rem;
 }
 
 .about-us .about-content .about-btn {
@@ -889,9 +892,11 @@ nav .container .nav-header {
 
 .about-us .about-content .grahic {
   position: absolute;
-  top: -140px;
-  right: 0px;
+  top: -8.75rem;
+  right: 0;
+  left: 0;
   z-index: -1;
+  overflow-x: hidden;
 }
 
 .products {
@@ -900,5 +905,173 @@ nav .container .nav-header {
 
 .products .container .product-title {
   text-align: center;
+}
+
+.products .container .product-content .product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.products .container .product-content .product-card .card-img {
+  margin: 2.38rem 0 2.13em;
+  width: 11.56rem;
+  height: 11.56rem;
+}
+
+.products .container .product-content .product-card h2 {
+  font-size: 1.13rem;
+  color: #DF362F;
+  padding-bottom: 0.75em;
+}
+
+.products .container .product-content .product-card p {
+  font-size: 1rem;
+  color: #3C3A3F;
+  padding-bottom: 3.44rem;
+}
+
+.products .container .product-content .product-card hr {
+  width: 80%;
+  height: 0.13rem;
+  border: none;
+  background: #D2D7D1;
+}
+
+.parllax {
+  height: 32.88em;
+  background: url("../img/parllax_image.jpg") no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.parllax .tyre-img {
+  width: 11em;
+}
+
+.parllax .phone {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.parllax .phone span {
+  font-size: 1.13rem;
+}
+
+.parllax .parllax-subtitle {
+  text-transform: uppercase;
+  font-size: 1.13rem;
+  color: #3C3A3F;
+}
+
+.parllax .parllax-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #3C3A3F;
+  font-size: 2.25em;
+  margin: 1.13rem 0 1.5rem;
+}
+
+.testimonial-header {
+  margin: 6.5rem 0 3.75rem;
+}
+
+.testimonial-header .testimonial-title {
+  font-size: 2.25rem;
+  letter-spacing: -0.1rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: #3C3A3F;
+  margin: 0;
+}
+
+.testimonial-header .testimonial-desc {
+  margin-top: 1.13rem;
+  font-size: 1rem;
+  line-height: 1.19rem;
+  color: rgba(0, 0, 0, 0.62);
+}
+
+.testimonial-content {
+  padding: 0 0.5rem;
+}
+
+.testimonial-content .testimonial-card {
+  padding: 0 0.9rem;
+  height: 14.81rem;
+  background: #fff;
+  box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.25);
+  margin-bottom: 3.06rem;
+  position: relative;
+}
+
+.testimonial-content .testimonial-card .qoute {
+  position: absolute;
+  left: 0.4rem;
+  top: 0.6rem;
+}
+
+.testimonial-content .testimonial-card .test-card-content {
+  margin-top: 1rem;
+  padding: 1rem 1rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.testimonial-content .testimonial-card .test-card-content .test-text {
+  flex: 0.55;
+}
+
+.testimonial-content .testimonial-card .test-card-content .test-text p {
+  font-size: 0.88rem;
+  color: rgba(0, 0, 0, 0.62);
+  line-height: 1.06rem;
+  margin-bottom: 1.13rem;
+}
+
+.testimonial-content .testimonial-card .test-card-content .test-text .text-name {
+  font-size: 1.13rem;
+  color: #3C3A3F;
+  font-weight: bold;
+}
+
+.testimonial-content .testimonial-card .test-card-content .test-image {
+  flex: 0.35;
+  justify-self: flex-end;
+}
+
+.location .container .location-title {
+  margin-bottom: 2.64rem;
+}
+
+.location .map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 17.5rem;
+}
+
+.location .map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.brands {
+  margin: 2.75rem 0 0 1.06rem;
+}
+
+.brands .logo-container {
+  margin: 2.13rem 0;
+  display: flex;
+  overflow-x: scroll;
 }
 /*# sourceMappingURL=style.css.map */

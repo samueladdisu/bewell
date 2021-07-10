@@ -281,3 +281,9 @@ nav{
     overflow-x: scroll;
   }
 }
+.footer{
+  background: $secondary-color;
+  .container{
+    background: lightblue;
+  }
+}

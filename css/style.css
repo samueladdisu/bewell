@@ -1074,4 +1074,11 @@ nav .container .nav-header {
   display: flex;
   overflow-x: scroll;
 }
-/*# sourceMappingURL=style.css.map */
+
+.footer {
+  background: #3C3A3F;
+}
+
+.footer .container {
+  background: lightblue;
+}

@@ -310,6 +310,7 @@ h1 {
 
 .container {
   width: 90%;
+  max-width: 1200px;
   margin: 0 auto;
   overflow: hidden;
   font-family: "Inter", sans-serif;
@@ -837,6 +838,9 @@ nav .container .nav-header .logo {
   nav .container .nav-header .logo {
     flex: 1;
   }
+  nav .container .nav-header .ham {
+    font-size: 4rem;
+  }
 }
 
 .links-container {
@@ -864,6 +868,45 @@ nav .container .nav-header .logo {
   z-index: 999999;
 }
 
+@media screen and (min-width: 992px) {
+  .nav {
+    padding-top: 1.94rem;
+  }
+  .nav .container {
+    display: flex;
+    align-items: center;
+  }
+  .nav .container .nav-header {
+    flex: 1;
+    padding: 0;
+  }
+  .nav .container .nav-header .menu {
+    display: none;
+  }
+  .nav .container .links-container {
+    flex: 1;
+    background: transparent;
+    height: auto;
+  }
+  .nav .container .links-container .nav-links {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav .container .links-container .nav-links li a {
+    color: #fff;
+    transition: all .3s linear;
+  }
+  .nav .container .links-container .nav-links li a:hover {
+    color: #DF362F;
+  }
+  .nav .container .links-container .nav-links li a:active {
+    color: #DF362F;
+  }
+  .nav .container .links-container .nav-links li .black {
+    color: #000;
+  }
+}
+
 .hero {
   height: 100%;
   width: 100%;
@@ -886,6 +929,27 @@ nav .container .nav-header .logo {
 
 .headline a {
   font-size: 0.75rem;
+}
+
+@media screen and (min-width: 768px) {
+  .headline .subtitle {
+    font-size: 2.25rem;
+  }
+  .headline .title {
+    font-size: 6rem;
+    width: 38.13rem;
+  }
+  .headline a {
+    font-size: 1.15rem;
+    padding: 1rem 4rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .headline .title {
+    font-size: 5rem;
+    width: 38.13rem;
+  }
 }
 
 .about-us .about-img {
@@ -923,6 +987,64 @@ nav .container .nav-header .logo {
   left: 0;
   z-index: -1;
   overflow-x: hidden;
+  height: 49.38rem;
+}
+
+.about-us .about-content .grahic img {
+  height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .about-us {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .about-us .about-content {
+    width: 44.88rem;
+    margin: 0;
+  }
+  .about-us .about-content .grahic {
+    overflow: visible;
+    top: -9rem;
+    left: -20rem;
+    right: -20rem;
+    bottom: -188rem;
+    z-index: -999;
+  }
+  .about-us .about-content .about-paragraph {
+    width: 22.63rem;
+  }
+  .about-us .about-content .about-btn {
+    text-align: left;
+  }
+  .about-us .about-img {
+    margin: 0;
+    width: 44.19rem;
+    z-index: 99999;
+    margin-top: -1.75rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .about-us {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .about-us .about-content {
+    grid-area: 1 / 1 / auto / 3;
+  }
+  .about-us .about-content .grahic {
+    left: -10rem;
+  }
+  .about-us .about-content .about-paragraph {
+    width: auto;
+  }
+  .about-us .about-img {
+    width: auto;
+    grid-area: 1 / 3 / auto / 6;
+  }
 }
 
 .products {
@@ -965,6 +1087,28 @@ nav .container .nav-header .logo {
   background: #D2D7D1;
 }
 
+@media screen and (min-width: 768px) {
+  .products .container .product-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .products .container .product-content .product-card {
+    position: relative;
+  }
+  .products .container .product-content .product-card hr {
+    display: none;
+  }
+  .products .container .product-content .product-card .line {
+    position: absolute;
+    top: 2.5rem;
+    right: 0;
+    background: #D2D7D1;
+    width: 0.13rem;
+    height: 10.25rem;
+  }
+}
+
 .parllax {
   height: 32.88em;
   background: url("../img/parllax_image.jpg") no-repeat;
@@ -1000,6 +1144,48 @@ nav .container .nav-header .logo {
   color: #3C3A3F;
   font-size: 2.25em;
   margin: 1.13rem 0 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .parllax {
+    height: 19rem;
+  }
+  .parllax .tyre-img {
+    width: 6rem;
+  }
+  .parllax .container .parllax-title {
+    font-size: 3.25rem;
+    width: 30.69rem;
+  }
+  .parllax .container .phone {
+    width: 60%;
+  }
+  .parllax .container .phone span {
+    font-size: 1.13rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .parllax {
+    height: 32.88em;
+    align-items: center;
+  }
+  .parllax .tyre-img {
+    width: 2rem;
+  }
+  .parllax .container .parllax-title {
+    font-size: 4rem;
+    width: auto;
+  }
+  .parllax .container .parllax-subtitle {
+    font-size: 1.5rem;
+  }
+  .parllax .container .phone {
+    width: 30%;
+  }
+  .parllax .container .phone span {
+    font-size: 1.13rem;
+  }
 }
 
 .testimonial-header {
@@ -1072,6 +1258,59 @@ nav .container .nav-header .logo {
   justify-self: flex-end;
 }
 
+@media screen and (min-width: 768px) {
+  .testimonial-header {
+    margin: 2.88rem auto 1.81rem;
+    width: 50%;
+  }
+  .testimonial-header .testimonial-title {
+    font-size: 2.25rem;
+    letter-spacing: -0.1rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: #3C3A3F;
+    margin: 0;
+  }
+  .testimonial-header .testimonial-desc {
+    margin-top: 1.13rem;
+    font-size: 1rem;
+    line-height: 1.19rem;
+    color: rgba(0, 0, 0, 0.62);
+  }
+  .testimonial-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+  }
+  .testimonial-content :nth-child(1) {
+    grid-area: 1 / span 2;
+  }
+  .testimonial-content :nth-child(2) {
+    grid-area: 1 / span 2;
+  }
+  .testimonial-content :nth-child(3) {
+    grid-area: 2 / 2 / span 1 / span 2;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .testimonials .testimonial-content {
+    grid-template-columns: 1fr 1fr 0.15fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+  }
+  .testimonials .testimonial-content :nth-child(2) {
+    grid-area: 1 / 3;
+  }
+  .testimonials .testimonial-content :nth-child(3) {
+    grid-area: 1 / 4 / 1 / 5;
+  }
+  .testimonials .testimonial-content :nth-child(4) {
+    grid-area: 2 / 3  / 2 / 4;
+  }
+}
+
 .location .container .location-title {
   margin-bottom: 2.64rem;
 }
@@ -1089,6 +1328,13 @@ nav .container .nav-header .logo {
   height: 100%;
   width: 100%;
   position: absolute;
+}
+
+@media screen and (min-width: 768px) {
+  .location .map-responsive {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 .brands {
@@ -1162,5 +1408,11 @@ nav .container .nav-header .logo {
   text-align: center;
   margin: 1.44rem auto;
   line-height: 1.66rem;
+}
+
+@media screen and (min-width: 768px) {
+  .footer .container .row .footer-link {
+    margin-top: 4rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

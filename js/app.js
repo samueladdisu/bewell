@@ -3,19 +3,25 @@ const linksContainer = document.querySelector('.links-container');
 const nav = document.querySelector('.nav');
 const logo = document.querySelector('.logo');
 const menu = document.querySelector('.ham')
+const links = linksContainer.querySelectorAll('.nav-links li a')
 window.addEventListener('scroll', ()=>{
     const navheight = nav.getBoundingClientRect().height;
     const scorllheight = window.pageYOffset;
-    console.log(scorllheight);
     if(scorllheight > navheight)
     {
         menu.classList.add('black')
+        links.forEach(item =>{
+            item.classList.add('black')
+        })
         logo.innerHTML = `<img src="./img/white_logo.svg" alt="Battery World Logo">`
         nav.classList.add('fixed-nav')
     }else{
         logo.innerHTML = `<img src="./img/Battery World.svg" alt="Battery World Logo">`
         nav.classList.remove('fixed-nav')
         menu.classList.remove('black')
+        links.forEach(item =>{
+            item.classList.remove('black')
+        })
     }
 })
 navToggle.addEventListener('click', () =>{
@@ -63,17 +69,26 @@ const productItems = [
 const productContent = document.querySelector('.product-content')
 
 let productCard  = productItems.map(item =>{
-  
-     if (item.id !== 6){
-
-         return `<div class="product-card col-10 col-offset-1">
-         <div class="card-img">
+    if (item.id === 3){
+        return `<div class="product-card col-10 col-offset-1 ">
+        <div class="card-img">
             <img src="${item.img}" alt="">
-         </div>
-         <h2>${item.title}</h2>
-         <p> ${item.desc}</p>
-         <hr>
-      </div>`
+        </div>
+        <h2>${item.title}</h2>
+        <p> ${item.desc}</p>
+        <hr>
+    </div>`
+     }else if (item.id !== 6){
+
+         return `<div class="product-card col-10 col-offset-1 ">
+                    <div class="card-img">
+                        <img src="${item.img}" alt="">
+                    </div>
+                    <h2>${item.title}</h2>
+                    <p> ${item.desc}</p>
+                    <hr>
+                    <div class="line"></div>
+                </div>`
      }else if (item.id === 6){
         return `<div class="product-card col-10 col-offset-1">
         <div class="card-img">
@@ -86,40 +101,61 @@ let productCard  = productItems.map(item =>{
     
 })
 
-productContent.innerHTML = productCard;
+productContent.innerHTML = productCard.join('');
 
 const testimonial = document.querySelector('.testimonial-content');
 
 const testimonialContent = [
     {
+        id: 1,
         text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, voluptates?",
         name: "Will Smith",
         img: './img/Ellipse 3.png'
     },
     {
-        text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, voluptates?",
-        name: "Joe Doe",
-        img: './img/Ellipse 1.png'
-    },
-    {
+        id: 2,
         text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, voluptates?",
         name: "Jane Doe",
         img: './img/Ellipse 2.png'
     },
+    {
+        id: 3,
+        text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, voluptates?",
+        name: "Joe Doe",
+        img: './img/Ellipse 1.png'
+    }
+    
 ]
 let testContent = testimonialContent.map(items =>{
-    return `<div class="testimonial-card col-12">
-    <img src="./img/quote.svg" alt="" class="qoute">
-    <div class="test-card-content">
-       <div class="test-text">
-          <p>${items.text}</p>
-          <h3 class="text-name">${items.name}</h3>
-       </div>
-       <div class="test-image">
-          <img src="${items.img}" alt="">
-       </div>
-    </div>
- </div>`
+    if(items.id === 1){
+        return `<div class="testimonial-card col-12">
+        <img src="./img/quote.svg" alt="" class="qoute">
+        <div class="test-card-content">
+           <div class="test-text">
+              <p>${items.text}</p>
+              <h3 class="text-name">${items.name}</h3>
+           </div>
+           <div class="test-image">
+              <img src="${items.img}" alt="">
+           </div>
+        </div>
+     </div>
+     <div class="divider"> <img src="./img/divider.svg"> </div>
+     `
+    }else{
+        return `<div class="testimonial-card col-12">
+        <img src="./img/quote.svg" alt="" class="qoute">
+        <div class="test-card-content">
+           <div class="test-text">
+              <p>${items.text}</p>
+              <h3 class="text-name">${items.name}</h3>
+           </div>
+           <div class="test-image">
+              <img src="${items.img}" alt="">
+           </div>
+        </div>
+     </div>`
+    }
 })
 
-testimonial.innerHTML = testContent;
+testimonial.innerHTML = testContent.join('');

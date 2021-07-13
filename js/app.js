@@ -108,18 +108,21 @@ const testimonial = document.querySelector('.testimonial-content');
 const testimonialContent = [
     {
         id: 1,
+        class: 'first',
         text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, voluptates?",
         name: "Will Smith",
         img: './img/Ellipse 3.png'
     },
     {
         id: 2,
+        class: 'second',
         text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, voluptates?",
         name: "Jane Doe",
         img: './img/Ellipse 2.png'
     },
     {
         id: 3,
+        class: 'third',
         text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, voluptates?",
         name: "Joe Doe",
         img: './img/Ellipse 1.png'
@@ -128,7 +131,7 @@ const testimonialContent = [
 ]
 let testContent = testimonialContent.map(items =>{
     if(items.id === 1){
-        return `<div class="testimonial-card col-12">
+        return `<div class="testimonial-card ${items.class} col-md-5 col-xl-5">
         <img src="./img/quote.svg" alt="" class="qoute">
         <div class="test-card-content">
            <div class="test-text">
@@ -140,10 +143,23 @@ let testContent = testimonialContent.map(items =>{
            </div>
         </div>
      </div>
-     <div class="divider"> <img src="./img/divider.svg"> </div>
+     <div id="divider" class="col-xl-1"> <img src="./img/divider.svg"> </div>
      `
+    }else if(items.class === 'third'){
+        return `<div class="testimonial-card ${items.class} col-md-5 col-md-offset-4 col-xl-offset-3">
+        <img src="./img/quote.svg" alt="" class="qoute">
+        <div class="test-card-content">
+           <div class="test-text">
+              <p>${items.text}</p>
+              <h3 class="text-name">${items.name}</h3>
+           </div>
+           <div class="test-image">
+              <img src="${items.img}" alt="">
+           </div>
+        </div>
+     </div>`
     }else{
-        return `<div class="testimonial-card col-12">
+        return `<div class="testimonial-card ${items.class} col-md-5 col-md-offset-1">
         <img src="./img/quote.svg" alt="" class="qoute">
         <div class="test-card-content">
            <div class="test-text">

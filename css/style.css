@@ -310,7 +310,7 @@ h1 {
 
 .container {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1265px;
   margin: 0 auto;
   overflow: hidden;
   font-family: "Inter", sans-serif;
@@ -319,6 +319,27 @@ h1 {
 .row {
   display: flex;
   flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .row-md {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .row-lg {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .row-lg {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .col {
@@ -721,6 +742,81 @@ h1 {
   }
 }
 
+@media screen and (min-width: 1920px) {
+  .col-xxl-1 {
+    flex: 0 0 8.33333%;
+  }
+  .col-xxl-offset-1 {
+    margin-left: 8.33333%;
+  }
+  .col-xxl-2 {
+    flex: 0 0 16.66667%;
+  }
+  .col-xxl-offset-2 {
+    margin-left: 16.66667%;
+  }
+  .col-xxl-3 {
+    flex: 0 0 25%;
+  }
+  .col-xxl-offset-3 {
+    margin-left: 25%;
+  }
+  .col-xxl-4 {
+    flex: 0 0 33.33333%;
+  }
+  .col-xxl-offset-4 {
+    margin-left: 33.33333%;
+  }
+  .col-xxl-5 {
+    flex: 0 0 41.66667%;
+  }
+  .col-xxl-offset-5 {
+    margin-left: 41.66667%;
+  }
+  .col-xxl-6 {
+    flex: 0 0 50%;
+  }
+  .col-xxl-offset-6 {
+    margin-left: 50%;
+  }
+  .col-xxl-7 {
+    flex: 0 0 58.33333%;
+  }
+  .col-xxl-offset-7 {
+    margin-left: 58.33333%;
+  }
+  .col-xxl-8 {
+    flex: 0 0 66.66667%;
+  }
+  .col-xxl-offset-8 {
+    margin-left: 66.66667%;
+  }
+  .col-xxl-9 {
+    flex: 0 0 75%;
+  }
+  .col-xxl-offset-9 {
+    margin-left: 75%;
+  }
+  .col-xxl-10 {
+    flex: 0 0 83.33333%;
+  }
+  .col-xxl-offset-10 {
+    margin-left: 83.33333%;
+  }
+  .col-xxl-11 {
+    flex: 0 0 91.66667%;
+  }
+  .col-xxl-offset-11 {
+    margin-left: 91.66667%;
+  }
+  .col-xxl-12 {
+    flex: 0 0 100%;
+  }
+  .col-xxl-offset-12 {
+    margin-left: 100%;
+  }
+}
+
 .btn {
   display: inline-block;
   font-weight: 400;
@@ -868,7 +964,7 @@ nav .container .nav-header .logo {
   z-index: 999999;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
   .nav {
     padding-top: 1.94rem;
   }
@@ -974,15 +1070,22 @@ nav .container .nav-header .logo {
   letter-spacing: -0.05em;
   text-transform: capitalize;
   padding-bottom: 1.56rem;
+  text-align: center;
 }
 
 .about-us .about-content .about-btn {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.about-us .about-content .about-title {
+  margin-top: 3rem;
   text-align: center;
 }
 
 .about-us .about-content .grahic {
   position: absolute;
-  top: -8.75rem;
+  top: -7.75rem;
   right: 0;
   left: 0;
   z-index: -1;
@@ -1008,15 +1111,19 @@ nav .container .nav-header .logo {
   .about-us .about-content .grahic {
     overflow: visible;
     top: -9rem;
-    left: -20rem;
+    left: -15rem;
     right: -20rem;
     bottom: -188rem;
     z-index: -999;
   }
   .about-us .about-content .about-paragraph {
     width: 22.63rem;
+    text-align: left;
   }
   .about-us .about-content .about-btn {
+    text-align: left;
+  }
+  .about-us .about-content .about-title {
     text-align: left;
   }
   .about-us .about-img {
@@ -1028,13 +1135,6 @@ nav .container .nav-header .logo {
 }
 
 @media screen and (min-width: 992px) {
-  .about-us {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  }
-  .about-us .about-content {
-    grid-area: 1 / 1 / auto / 3;
-  }
   .about-us .about-content .grahic {
     left: -10rem;
   }
@@ -1043,7 +1143,51 @@ nav .container .nav-header .logo {
   }
   .about-us .about-img {
     width: auto;
-    grid-area: 1 / 3 / auto / 6;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-us .about-content {
+    margin-top: 4.5rem;
+  }
+  .about-us .about-content .grahic {
+    right: -30rem;
+    left: -10rem;
+  }
+  .about-us .about-content .container .about-title {
+    padding-left: 1.5rem;
+  }
+  .about-us .about-content .about-paragraph {
+    width: 28.19rem;
+  }
+  .about-us .about-img {
+    margin-top: -4rem;
+    overflow: visible;
+    width: 58.31rem;
+    height: 44.69rem;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .about-us {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 4rem;
+  }
+  .about-us .about-img {
+    margin-top: -6rem;
+  }
+  .about-us .about-content {
+    margin-top: 4.5rem;
+  }
+  .about-us .about-content .grahic {
+    right: -40rem;
+  }
+  .about-us .about-content .container .about-title {
+    padding-left: 1.5rem;
+  }
+  .about-us .about-content .container .about-paragraph {
+    width: 25.19rem;
   }
 }
 
@@ -1212,6 +1356,10 @@ nav .container .nav-header .logo {
   padding: 0 0.5rem;
 }
 
+.testimonial-content #divider {
+  display: none;
+}
+
 .testimonial-content .testimonial-card {
   padding: 0 0.9rem;
   height: 14.81rem;
@@ -1277,37 +1425,21 @@ nav .container .nav-header .logo {
     line-height: 1.19rem;
     color: rgba(0, 0, 0, 0.62);
   }
-  .testimonial-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 2rem;
-  }
-  .testimonial-content :nth-child(1) {
-    grid-area: 1 / span 2;
-  }
-  .testimonial-content :nth-child(2) {
-    grid-area: 1 / span 2;
-  }
-  .testimonial-content :nth-child(3) {
-    grid-area: 2 / 2 / span 1 / span 2;
+  .testimonial-content .first {
+    margin-left: 2rem;
   }
 }
 
-@media screen and (min-width: 992px) {
-  .testimonials .testimonial-content {
-    grid-template-columns: 1fr 1fr 0.15fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 2rem;
+@media screen and (min-width: 1200px) {
+  .testimonials .testimonial-content #divider {
+    display: block;
+    padding-left: 3rem;
   }
-  .testimonials .testimonial-content :nth-child(2) {
-    grid-area: 1 / 3;
+  .testimonials .testimonial-content .first {
+    margin-left: 2rem;
   }
-  .testimonials .testimonial-content :nth-child(3) {
-    grid-area: 1 / 4 / 1 / 5;
-  }
-  .testimonials .testimonial-content :nth-child(4) {
-    grid-area: 2 / 3  / 2 / 4;
+  .testimonials .testimonial-content .second {
+    margin: 0;
   }
 }
 
@@ -1337,6 +1469,15 @@ nav .container .nav-header .logo {
   }
 }
 
+@media screen and (min-width: 992px) {
+  .location .map-responsive {
+    width: 90%;
+    margin: 0 auto;
+    height: 29.25rem;
+    padding: 0;
+  }
+}
+
 .brands {
   margin: 2.75rem 0 0 1.06rem;
 }
@@ -1345,6 +1486,16 @@ nav .container .nav-header .logo {
   margin: 2.13rem 0;
   display: flex;
   overflow-x: scroll;
+}
+
+@media screen and (min-width: 1200px) {
+  .brands {
+    margin: 2.75rem 0 0 1.06rem;
+  }
+  .brands .logo-container {
+    display: flex;
+    overflow: visible;
+  }
 }
 
 .footer {

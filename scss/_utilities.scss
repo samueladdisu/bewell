@@ -15,7 +15,7 @@ $light-color: #D2D7D1;
 // Gird system
 .container {
   width: 100% - 10%;
-  max-width: 1200px;
+  max-width: 1265px;
   margin: 0 auto;
   overflow: hidden;
   font-family: $font;
@@ -23,6 +23,24 @@ $light-color: #D2D7D1;
 .row {
   display: flex;
   flex-wrap: wrap;
+}
+@include responsive($md){
+  .row-md {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@include responsive($lg){
+  .row-lg{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@include responsive($xl){
+  .row-lg{
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .col {
   flex: 1 0 0%;
@@ -81,6 +99,17 @@ $light-color: #D2D7D1;
       flex: 0 0 100% / $columns * $i;
     }
     .col-xl-offset-#{$i} {
+      margin-left: 100% / $columns * $i;
+    }
+  }
+}
+
+@include responsive($xxl) {
+  @for $i from 1 through $columns {
+    .col-xxl-#{$i} {
+      flex: 0 0 100% / $columns * $i;
+    }
+    .col-xxl-offset-#{$i} {
       margin-left: 100% / $columns * $i;
     }
   }

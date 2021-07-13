@@ -2,6 +2,7 @@ $font: 'Inter', sans-serif;
 @import "reboot";
 @import "mixins";
 @import "utilities";
+@import "tyre";
 
 div[class^="col-"] , .col{
   padding: 1rem 0;

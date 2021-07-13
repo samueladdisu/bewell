@@ -1,0 +1,224 @@
+.tyre-header{
+    position: relative;
+    height: 50vh;
+  }
+  .banner-tyre{
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.37) url('../img/tyre/tyre_banner.jpg') no-repeat;
+    background-position:  center center;
+    background-size: cover;
+    background-blend-mode: overlay;
+  }
+  .ham{
+    color: #fff;
+    font-size: 2rem;
+  }
+  .black{
+    color: #000;
+  }
+  nav{
+    position: relative;
+    transition: all 0.3s linear;
+    padding-bottom: 0.5rem;
+    .container{
+      .nav-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 1.94rem;
+        .logo{
+          width: 16rem;
+        }
+        
+      }
+      @include responsive($md){
+        .nav-header{
+          display: flex;
+          .logo{
+            flex: 1;
+          }
+          .ham{
+            font-size: 4rem;
+          }
+          
+        }
+      }
+      
+    }
+  }
+  .links-container{
+    background: #fff;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s linear;
+    .nav-links{
+      li{
+      padding: 0.75rem 1rem;
+      
+      }
+    }
+  }
+  .show-links{
+    height: auto !important;
+  }
+  .fixed-nav{
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    z-index: 999999;
+  }
+  @include responsive($xl){
+      .nav{
+        padding-top: 1.94rem;
+        .container{
+          display: flex;
+          align-items: center;
+          .nav-header{
+            flex: 1;
+            padding: 0;
+            .menu{
+              display: none;
+            }
+          }
+          .links-container{
+            flex: 1;
+            background: transparent;
+            height: auto;
+            .nav-links{
+              display: flex;
+              justify-content: space-between;
+              li{
+                a{
+                  color: #fff;
+                  transition: all .3s linear;
+                  &:hover{
+                    color: $primary-color;
+                  }
+                  &:active{
+                    color: $primary-color;
+                  }
+                }
+                .black{
+                  color: #000;
+                }
+              }
+              
+            }
+            
+          }
+        }
+      }
+}
+
+.tyre-product{
+    .btn-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1rem;
+        margin-top: 2.98rem;
+        margin-bottom: 4.9rem;
+        .tab{
+            width: 5.69rem;
+            height: 4.81rem;
+            margin-right: 1.63rem;
+            background: #FFFFFF;
+            box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.25);
+            border-radius: 9px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            svg{
+                width: 3.1rem;
+            }
+            p{
+                display: none;
+            }
+        }
+        .car{
+          path{
+              fill: $primary-color;
+          }
+        }
+        
+    }
+    .tyre-product-content{
+        .tyre-card{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .card-img{
+              margin: 2.38rem 0 2.13em;
+            }
+            h2{
+              font-size: 1.13rem;
+              color: $primary-color;
+              padding-bottom: 0.75em;
+            }
+            p{
+              font-size: 1rem;
+              color: $secondary-color;
+              padding-bottom: 3.44rem;
+            }
+            hr{
+              width: 80%;
+              height: 0.13rem;
+              border: none;
+              background: $light-color;
+            }
+          
+        }
+    }
+}
+
+@include responsive($md){
+    .tyre-product{
+        .btn-container{
+            .tab{
+                width: 9.8rem;
+                height: 8.2rem;
+                display: flex;
+                flex-direction: column;
+                svg{
+                    width: 5.3rem;
+                }
+                p{
+                    display: block;
+                    padding-bottom: 1rem;
+                }
+            }
+        }
+      .container{
+        .tyre-product-content{
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
+          .tyre-card{
+            position: relative;
+            hr{
+              display: none;
+            }
+            .line{
+              position: absolute;
+              top: 2.5rem;
+              right: 0;
+              background: $light-color;
+              width: 0.13rem;
+              height: 10.25rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  

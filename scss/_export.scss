@@ -1,0 +1,35 @@
+@include header(export,url('../img/export_banner.jpg'), 50vh);
+
+.export-products{
+   margin-top: 4.132rem;
+   margin-bottom: 6.5rem;
+    .container{
+      .product-title{
+        text-align: center;
+      }
+      .export-product-content{
+        .product-card{
+          
+          @include cardStyles;
+          
+        }
+      }
+    }
+  }
+  @include responsive($md){
+    .export-products{
+      .container{
+        .product-title{
+          text-align: center;
+        }
+        .export-product-content{
+          
+            
+            @include responsiveCardStyles;
+             
+            
+          
+        }
+      }
+    }
+  }

@@ -1,0 +1,70 @@
+.map{
+    margin-bottom: 6.13rem;
+}
+
+.contact-header{
+    position: relative;
+    height: 80vh;
+    .box{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        width: 5.19rem;
+        height: 80%;
+        background: $secondary-color;
+    }
+    .get-in-touch{
+        position: absolute;
+        top: 6rem;
+        left: 1rem;
+        width: 20.19rem;
+        height: 30.06rem;
+        background: #FFFFFF;
+        box-shadow: 2px 2px 17px rgba(0, 0, 0, 0.25);
+        .container{
+            h3{
+                font-weight: 300;
+                font-size: 0.88rem;
+                line-height: 17px;
+                letter-spacing: 0.2em;
+                text-transform: uppercase;
+                color: #3C3A3F;
+            }
+            .contact-details{
+                .details{
+                    display: flex;
+                    .img{
+                        .bx{
+                            font-size: 1.63rem;
+                            color: #DF362F;
+                        }
+                    }
+                    .text{
+                        
+                        p{
+                            font-size: 1rem;
+                            line-height: 1.5rem;
+                            letter-spacing: -0.05em;
+                            text-transform: capitalize;
+                            color: #000000;
+                        }
+                    }
+                }
+            }
+            .socials{
+                .social-icons{
+                    display: flex;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+

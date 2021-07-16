@@ -107,6 +107,7 @@ $xxl: 1920px;
       position: relative;
       transition: all 0.3s linear;
       padding-bottom: 0.5rem;
+      z-index: 999999;
       .container{
         .nav-header{
           display: flex;

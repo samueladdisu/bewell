@@ -4,22 +4,25 @@
 
 .contact-header{
     position: relative;
-    height: 80vh;
+    height: 94.31rem;
     .box{
         position: absolute;
         top: 0;
         right: 0;
         z-index: -1;
         width: 5.19rem;
-        height: 80%;
+        height: 40%;
         background: $secondary-color;
+        img{
+            display: none;
+        }
     }
     .get-in-touch{
         position: absolute;
         top: 6rem;
         left: 1rem;
         width: 20.19rem;
-        height: 30.06rem;
+        // height: 30.06rem;
         background: #FFFFFF;
         box-shadow: 2px 2px 17px rgba(0, 0, 0, 0.25);
         .container{
@@ -32,8 +35,10 @@
                 color: #3C3A3F;
             }
             .contact-details{
+                margin-bottom: 2.5rem;
                 .details{
                     display: flex;
+                    margin-bottom: 2.56rem;
                     .img{
                         .bx{
                             font-size: 1.63rem;
@@ -41,8 +46,9 @@
                         }
                     }
                     .text{
-                        
+                        margin-left: 1rem;
                         p{
+                            margin-top: 0.81rem;
                             font-size: 1rem;
                             line-height: 1.5rem;
                             letter-spacing: -0.05em;
@@ -53,10 +59,182 @@
                 }
             }
             .socials{
+                h3{
+                    margin-bottom: 2.5rem;
+                }
                 .social-icons{
                     display: flex;
+                    margin-bottom: 4.63rem;
+                    img{
+                        margin-right: 2.25rem;
+
+                    }
                 }
             }
+        }
+    }
+    .contact-form{
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        h1{
+            margin-bottom: 3.25rem;
+        }
+        .form{
+            
+            display: flex;
+            flex-direction: column;
+            label{
+                margin-bottom: 1rem;
+            }
+            input, textarea{
+                width: 100%;
+                background: #F1F1F1;
+                border: 1px solid #DCDCDC;
+                box-sizing: border-box;
+                margin-bottom: 1rem;
+                padding: 1rem;
+            }
+            input{
+                height: 2.88rem;
+            }
+            input:active{
+                border-color: $primary-color;
+            }
+            button{
+                margin: 1.69rem 0;
+                width: 12.31rem;
+            }
+        }
+    }
+}
+
+
+
+
+@include responsive($md){
+    .map{
+        margin-top: 3.44rem;
+    }
+    .contact-header{
+        
+        height: 60.56rem;
+        .box{
+            width: 18.63rem;
+            height: 60.56rem;
+
+        }
+        .get-in-touch{
+            box-shadow: none;
+            margin-top: 5rem;
+        }
+        .contact-form{
+            width: 25.88rem;
+            background: #FFFFFF;
+            border: 10px solid $primary-dark-color;
+            top: 9.13rem;
+            left: 20.44rem;
+        }
+    }
+}
+@include responsive($lg){
+    .contact-header{
+        .box{
+            width: 28.63rem;
+        }
+        .get-in-touch{
+          
+            width: 20.19rem;
+            .container{
+                h3{
+                    font-size: 0.88rem;
+                }
+                .contact-details{
+                    margin-bottom: 2.5rem;
+                    .details{
+                        
+                        .text{
+                            p{
+                                font-size: 1.13rem;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+        .contact-form{
+            width: 30rem;
+            left: 25rem;
+        }
+    }
+    
+}
+
+@include responsive($xl){
+    .contact-header{
+        .box{
+            width: 46.94rem;
+            overflow: hidden;
+            img{
+                display: block;
+                margin: 6.44rem 8.56rem 0;
+            }
+        }
+        .get-in-touch{
+            .container{
+                h1{
+                    font-size: 3.25rem;
+                }
+                .contact-details{
+                    .details{
+                        .text{
+                            p{
+                                line-height: 1.38rem;
+                                letter-spacing: -0.05em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .contact-form{
+            width: 36rem;
+            left: 32.81rem;
+        }
+    }
+}
+@include responsive($xxl){
+    .contact-header{
+        .box{
+            width: 59.94rem;
+            overflow: hidden;
+            img{
+                display: block;
+                margin: 4.44rem 25.56rem 0;
+            }
+        }
+        .get-in-touch{
+            margin-left: 8rem;
+            .container{
+                h1{
+                    font-size: 3.25rem;
+                }
+                .contact-details{
+                    .details{
+                        .text{
+                            p{
+                                line-height: 1.38rem;
+                                letter-spacing: -0.05em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .contact-form{
+            width: 46rem;
+            left: 52.81rem;
         }
     }
 }

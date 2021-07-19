@@ -67,7 +67,7 @@ function datas(){
         {   
             id: 3,
             img: './img/tyre/truck/truck3.png',
-            title: 'Brigestone',
+            title: 'Bridgestone',
             desc: '',
             category: 'truck'
         },
@@ -193,7 +193,7 @@ function mapContent(...args){
             </div>
             <h2>${item.title}</h2>
             <p> ${item.desc}</p>
-            <a class="btn btn-rounded-primary"> Contact Us For Details</a>
+            <a href="./contact.html" class="btn btn-rounded-primary"> Contact Us For Details</a>
             <hr>
         </div>`
          }else if (item.id !== 6){
@@ -204,7 +204,7 @@ function mapContent(...args){
                         </div>
                         <h2>${item.title}</h2>
                         <p> ${item.desc}</p>
-                        <a class="btn btn-rounded-primary"> Contact Us For Details</a>
+                        <a href="./contact.html" class="btn btn-rounded-primary"> Contact Us For Details</a>
                         <hr>
                         <div class="line"></div>
                     </div>`
@@ -215,7 +215,7 @@ function mapContent(...args){
             </div>
             <h2>${item.title}</h2>
             <p> ${item.desc}</p>
-            <a class="btn btn-rounded-primary"> Contact Us For Details</a>
+            <a href="./contact.html" class="btn btn-rounded-primary"> Contact Us For Details</a>
          </div>`
          }
     }).join('')

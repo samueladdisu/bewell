@@ -50,7 +50,7 @@ let productCard  = productItems.map(item =>{
         </div>
         <h2>${item.title}</h2>
         <p> ${item.desc}</p>
-        <a class="btn btn-rounded-primary"> Contact Us For Details</a>
+        <a href="./contact.html" class="btn btn-rounded-primary"> Contact Us For Details</a>
         <hr>
     </div>`
      }else if (item.id !== 6){
@@ -61,7 +61,7 @@ let productCard  = productItems.map(item =>{
                     </div>
                     <h2>${item.title}</h2>
                     <p> ${item.desc}</p>
-                    <a class="btn btn-rounded-primary"> Contact Us For Details</a>
+                    <a href="./contact.html" class="btn btn-rounded-primary"> Contact Us For Details</a>
                     <hr>
                     <div class="line"></div>
                 </div>`
@@ -72,7 +72,7 @@ let productCard  = productItems.map(item =>{
         </div>
         <h2>${item.title}</h2>
         <p> ${item.desc}</p>
-        <a class="btn btn-rounded-primary"> Contact Us For Details</a>
+        <a href="./contact.html" class="btn btn-rounded-primary"> Contact Us For Details</a>
      </div>`
      }
     
@@ -86,22 +86,22 @@ const testimonialContent = [
     {
         id: 1,
         class: 'first',
-        text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, voluptates?",
-        name: "Will Smith",
+        text: "We had a great experince working with the Battery World team, We highly recommed their services.",
+        name: "John Franklin",
         img: './img/Ellipse 3.png'
     },
     {
         id: 2,
         class: 'second',
-        text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, voluptates?",
-        name: "Jane Doe",
+        text: "Very happy with the services provided, we'll definitley work with Battery World again!",
+        name: "Valerie Volchenko",
         img: './img/Ellipse 2.png'
     },
     {
         id: 3,
         class: 'third',
-        text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, voluptates?",
-        name: "Joe Doe",
+        text: "Battery World had the products we were looking for and delivered on time.",
+        name: "Edward Sanchez",
         img: './img/Ellipse 1.png'
     }
     

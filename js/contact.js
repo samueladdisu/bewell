@@ -28,4 +28,53 @@
             })
         }
     })
-    
+// let form = document.forms["myform"]
+// form.addEventListener('submit', event => {
+//     event.preventDefault()
+//     let fname = form['fname'],
+//         email = form['email'],
+//         subject = form['subject'],
+//         msg = form['msg'];
+
+//         if(fname.value == '' || email.value == '' || subject.value == "" || msg.value == ""){
+//             alert('Fields should not be empty')
+//         }else{
+//             if(allLetter(fname)){
+//                 if(ValidateEmail(email)){
+//                     console.log("submited");
+//                     form.submit()
+//                 }
+             
+//             }
+//         }
+        
+       
+     
+// })
+
+   
+
+function allLetter(uname) {
+    var letters = /^[A-Za-z]+$/;
+    if (uname.value.match(letters)) {
+        return true;
+    }
+    else {
+        alert('Username must have alphabet characters only');
+        uname.focus();
+        return false;
+    }
+}
+
+function ValidateEmail(uemail) {
+    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if (uemail.value.match(mailformat)) {
+        return true;
+    }
+    else {
+        alert("You have entered an invalid email address!");
+        uemail.focus();
+        return false;
+    }
+}
+

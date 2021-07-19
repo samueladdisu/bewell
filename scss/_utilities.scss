@@ -1,6 +1,6 @@
 // font family
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
 // Variables 
 
@@ -151,11 +151,22 @@ $light-color: #D2D7D1;
   background: $primary-color;
   color: #fff;
 }
+// .btn-rounded-primary:hover{
+//   background-color: transparent;
+//   color: $primary-color;
+//   border-color: $primary-color;
+// }
+
 .btn-rounded-outline-primary{
   @extend .btn-rounded;
   background: transparent;
   color: $primary-color;
   border-color: $primary-color;
+  transition: all 0.3s linear;
+}
+.btn-rounded-outline-primary:hover{
+  background-color: $primary-color;
+  color: #fff;
 }
 .btn-secondary {
   color: #fff;

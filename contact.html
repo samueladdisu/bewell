@@ -55,7 +55,8 @@
                         <div class="text">
                             <h3>Address</h3>
                             <p>
-                                1234 N Spring St, Los Angeles, CA 90012, United States.
+                                Teklehaimanot , Addis Ababa, Ethiopia. <br>
+                                Near Tikur Anbessa Hospital
                             </p>
                         </div>
                     </div>
@@ -67,7 +68,10 @@
                         <div class="text">
                             <h3>Phone</h3>
                             <p>
-                                +251 933 817881
+                                +251911215431 
+                            </p>
+                            <p>
+                                +251911215434
                             </p>
                         </div>
                     </div>
@@ -79,7 +83,8 @@
                         <div class="text">
                             <h3>Email</h3>
                             <p>
-                                batteryworld@batteryworld.com
+                                <a href="mailto:Sales@bewelltradingco.com">Sales@bewelltradingco.com</a>
+                                
                             </p>
                         </div>
                     </div>
@@ -101,16 +106,20 @@
                     send us message
                     
                 </h1>
-                <form action="" class="form">
+                <form name="myform" action="contact.php" id="form"  method="POST" class="form">
                     <label for="name">Name</label>
-                    <input type="text" name="name" id="name">
+                    <input type="text" name="fname" id="name" required>
+                    <p class="error"></p>
                     <label for="email">Email</label>
-                    <input type="text" name="email" id="email">
+                    <input type="email" name="email" id="email" required>
+                    <p class="error"></p>
                     <label for="subject">Subject</label>
                     <input type="text" name="subject" id="subject">
+                    <p class="error"></p>
                     <label for="msg">Message</label>
-                    <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
-                    <button type="submit" class="btn btn-rounded-primary">Send Message</button>
+                    <textarea name="msg" id="msg" cols="30" rows="10" required></textarea>
+                    <!-- <div class="g-recaptcha" data-sitekey="6LcePAATAAAAAGPRWgx90814DTjgt5sXnNbV5WaW"></div> -->
+                    <button type="submit" name="submit" class="btn btn-rounded-primary">Send Message</button>
                 </form>
             </div>
         </div>
@@ -146,11 +155,12 @@
                  <div class="footer-info">
                     <div>
                        <img src="./img/ant-design_clock-circle-outlined.svg" alt="">
-                       <p>MON - FRI: 8:00 AM - 5:00 PM, SAT-SUN: 9:00AM - 1:00PM</p>
+                       <p>MON - SAT: 8:00 AM - 5:00 PM</p>
                     </div>
                     <div>
                        <img src="./img/carbon_phone-voice.svg" alt="">
-                       <p>CALL US: (+251) 911 53 03 88</p>
+                       <p>CALL US: +251911215431 , +251911215434
+                        </p>
                     </div>
                  </div>
               </div>
@@ -183,5 +193,6 @@
         </div>
      </section>
      <script type="module" src="./js/contact.js"></script>
+      <script src='https://www.google.com/recaptcha/api.js'></script>
 </body>
 </html>

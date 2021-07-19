@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -855,6 +856,12 @@ h1 {
   background: transparent;
   color: #DF362F;
   border-color: #DF362F;
+  transition: all 0.3s linear;
+}
+
+.btn-rounded-outline-primary:hover {
+  background-color: #DF362F;
+  color: #fff;
 }
 
 .btn-secondary {
@@ -880,7 +887,7 @@ h1 {
 .tyre-banner {
   height: 100%;
   width: 100%;
-  z-index: -1;
+  z-index: 999;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -1002,7 +1009,7 @@ nav .container .nav-header .logo {
 .battery-banner {
   height: 100%;
   width: 100%;
-  z-index: -1;
+  z-index: 999;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -1146,6 +1153,10 @@ nav .container .nav-header .logo {
   display: none;
 }
 
+.tyre-product .btn-container .tab h1 {
+  color: #DF362F;
+}
+
 .tyre-product .btn-container .active {
   background: #3C3A3F;
 }
@@ -1163,24 +1174,40 @@ nav .container .nav-header .logo {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2rem;
 }
 
 .tyre-product .tyre-product-content .product-card .card-img {
   margin: 2.38rem 0 2.13em;
-  width: 11.56rem;
-  height: 11.56rem;
+  width: auto;
+  height: 15.57rem;
+  transition: all 0.3s linear;
+}
+
+.tyre-product .tyre-product-content .product-card .card-img img {
+  transition: all 0.3s linear;
+}
+
+.tyre-product .tyre-product-content .product-card .card-img:hover img {
+  transform: rotateY(180deg);
 }
 
 .tyre-product .tyre-product-content .product-card h2 {
-  font-size: 1.13rem;
+  font-size: 1.6rem;
   color: #DF362F;
   padding-bottom: 0.75em;
+  font-family: 'Gelasio', serif;
 }
 
 .tyre-product .tyre-product-content .product-card p {
   font-size: 1rem;
   color: #3C3A3F;
-  padding-bottom: 3.44rem;
+  padding-bottom: 1.44rem;
+}
+
+.tyre-product .tyre-product-content .product-card a {
+  visibility: hidden;
+  transition: all 0.3s linear;
 }
 
 .tyre-product .tyre-product-content .product-card hr {
@@ -1188,6 +1215,10 @@ nav .container .nav-header .logo {
   height: 0.13rem;
   border: none;
   background: #D2D7D1;
+}
+
+.tyre-product .tyre-product-content .product-card:hover a {
+  visibility: visible;
 }
 
 @media screen and (min-width: 768px) {
@@ -1237,6 +1268,109 @@ nav .container .nav-header .logo {
   }
 }
 
+.tyre-product .tyre-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  margin-top: 2.98rem;
+  margin-bottom: 4.9rem;
+}
+
+.tyre-product .tyre-btn-container .tab {
+  width: 3.69rem;
+  height: 2.81rem;
+  padding: 1rem 0;
+  margin-right: 0.5rem;
+  background: #FFFFFF;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tyre-product .tyre-product-content .product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.tyre-product .tyre-product-content .product-card .card-img {
+  margin: 2.38rem 0 2.13em;
+  width: auto;
+  height: 15.57rem;
+  transition: all 0.3s linear;
+}
+
+.tyre-product .tyre-product-content .product-card .card-img img {
+  transition: all 0.3s linear;
+}
+
+.tyre-product .tyre-product-content .product-card .card-img:hover img {
+  transform: rotateY(180deg);
+}
+
+.tyre-product .tyre-product-content .product-card h2 {
+  font-size: 1.6rem;
+  color: #DF362F;
+  padding-bottom: 0.75em;
+  font-family: 'Gelasio', serif;
+}
+
+.tyre-product .tyre-product-content .product-card p {
+  font-size: 1rem;
+  color: #3C3A3F;
+  padding-bottom: 1.44rem;
+}
+
+.tyre-product .tyre-product-content .product-card a {
+  visibility: hidden;
+  transition: all 0.3s linear;
+}
+
+.tyre-product .tyre-product-content .product-card hr {
+  width: 80%;
+  height: 0.13rem;
+  border: none;
+  background: #D2D7D1;
+}
+
+.tyre-product .tyre-product-content .product-card:hover a {
+  visibility: visible;
+}
+
+@media screen and (min-width: 768px) {
+  .tyre-product .tyre-btn-container .tab {
+    width: 5.8rem;
+    height: 4.2rem;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.1s linear;
+  }
+  .tyre-product .container .tyre-product-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .tyre-product .container .tyre-product-content .product-card {
+    position: relative;
+  }
+  .tyre-product .container .tyre-product-content .product-card hr {
+    display: none;
+  }
+  .tyre-product .container .tyre-product-content .product-card .line {
+    position: absolute;
+    top: 2.5rem;
+    right: 0;
+    background: #D2D7D1;
+    width: 0.13rem;
+    height: 10.25rem;
+  }
+}
+
 .export-header {
   position: relative;
   height: 50vh;
@@ -1245,7 +1379,7 @@ nav .container .nav-header .logo {
 .export-banner {
   height: 100%;
   width: 100%;
-  z-index: -1;
+  z-index: 999;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -1373,24 +1507,40 @@ nav .container .nav-header .logo {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2rem;
 }
 
 .export-products .container .export-product-content .product-card .card-img {
   margin: 2.38rem 0 2.13em;
-  width: 11.56rem;
-  height: 11.56rem;
+  width: auto;
+  height: 15.57rem;
+  transition: all 0.3s linear;
+}
+
+.export-products .container .export-product-content .product-card .card-img img {
+  transition: all 0.3s linear;
+}
+
+.export-products .container .export-product-content .product-card .card-img:hover img {
+  transform: rotateY(180deg);
 }
 
 .export-products .container .export-product-content .product-card h2 {
-  font-size: 1.13rem;
+  font-size: 1.6rem;
   color: #DF362F;
   padding-bottom: 0.75em;
+  font-family: 'Gelasio', serif;
 }
 
 .export-products .container .export-product-content .product-card p {
   font-size: 1rem;
   color: #3C3A3F;
-  padding-bottom: 3.44rem;
+  padding-bottom: 1.44rem;
+}
+
+.export-products .container .export-product-content .product-card a {
+  visibility: hidden;
+  transition: all 0.3s linear;
 }
 
 .export-products .container .export-product-content .product-card hr {
@@ -1398,6 +1548,10 @@ nav .container .nav-header .logo {
   height: 0.13rem;
   border: none;
   background: #D2D7D1;
+}
+
+.export-products .container .export-product-content .product-card:hover a {
+  visibility: visible;
 }
 
 @media screen and (min-width: 768px) {
@@ -1487,7 +1641,7 @@ nav .container .nav-header .logo {
 .contact-header .get-in-touch .container .contact-details .details .text p {
   margin-top: 0.81rem;
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 2.5rem;
   letter-spacing: -0.05em;
   text-transform: capitalize;
   color: #000000;
@@ -1658,7 +1812,7 @@ div[class^="col-"], .col {
 .home-banner {
   height: 100%;
   width: 100%;
-  z-index: -1;
+  z-index: 999;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -1778,12 +1932,10 @@ nav .container .nav-header .logo {
   display: grid;
   place-items: center;
   text-align: center;
-  z-index: 99999;
 }
 
-.headline .subtitle {
-  font-size: 1.13rem;
-  color: #D2D7D1;
+.headline {
+  z-index: 999999;
 }
 
 .headline .title {
@@ -1973,24 +2125,40 @@ nav .container .nav-header .logo {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2rem;
 }
 
 .products .container .product-content .product-card .card-img {
   margin: 2.38rem 0 2.13em;
-  width: 11.56rem;
-  height: 11.56rem;
+  width: auto;
+  height: 15.57rem;
+  transition: all 0.3s linear;
+}
+
+.products .container .product-content .product-card .card-img img {
+  transition: all 0.3s linear;
+}
+
+.products .container .product-content .product-card .card-img:hover img {
+  transform: rotateY(180deg);
 }
 
 .products .container .product-content .product-card h2 {
-  font-size: 1.13rem;
+  font-size: 1.6rem;
   color: #DF362F;
   padding-bottom: 0.75em;
+  font-family: 'Gelasio', serif;
 }
 
 .products .container .product-content .product-card p {
   font-size: 1rem;
   color: #3C3A3F;
-  padding-bottom: 3.44rem;
+  padding-bottom: 1.44rem;
+}
+
+.products .container .product-content .product-card a {
+  visibility: hidden;
+  transition: all 0.3s linear;
 }
 
 .products .container .product-content .product-card hr {
@@ -1998,6 +2166,10 @@ nav .container .nav-header .logo {
   height: 0.13rem;
   border: none;
   background: #D2D7D1;
+}
+
+.products .container .product-content .product-card:hover a {
+  visibility: visible;
 }
 
 @media screen and (min-width: 768px) {
@@ -2306,7 +2478,7 @@ nav .container .nav-header .logo {
 }
 
 .footer .container .footer-info div p {
-  font-size: 0.75rem;
+  font-size: 1rem;
   flex: 0.95;
 }
 
@@ -2314,6 +2486,10 @@ nav .container .nav-header .logo {
   display: flex;
   justify-content: space-between;
   margin-bottom: 2.375rem;
+}
+
+.footer .footer-link .useful-links {
+  margin-right: 1rem;
 }
 
 .footer .footer-link h3 {

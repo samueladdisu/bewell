@@ -3,6 +3,7 @@ $font: 'Inter', sans-serif;
 @import "mixins";
 @import "utilities";
 @import "tyre";
+@import "battery";
 @import "export";
 @import "contact";
 
@@ -22,15 +23,9 @@ div[class^="col-"] , .col{
   display: grid;
   place-items: center;
   text-align: center;
-  z-index: 99999;
 }
 .headline{
-  .subtitle{
-    font-size: 1.13rem;
-    color: $light-color;
-   
-    }
-  
+  z-index: 999999;
   .title{
     font-size: 3.25rem;
     color: #fff;
@@ -525,7 +520,7 @@ div[class^="col-"] , .col{
         justify-content: space-between;
         margin-bottom: 1.3rem;
         p{
-          font-size: 0.75rem;
+          font-size: 1rem;
           flex: 0.95;
         }
       }
@@ -535,6 +530,9 @@ div[class^="col-"] , .col{
     display: flex;
     justify-content: space-between;
     margin-bottom: 2.375rem;
+    .useful-links{
+      margin-right: 1rem;
+    }
     h3{
       font-size: 1.5rem;
       font-weight: bold;

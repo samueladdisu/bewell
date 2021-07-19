@@ -7,44 +7,44 @@ function datas(){
     const carProduct = [
         {   
             id: 1,
-            img: './img/tyre/car.png',
-            title: 'Hancock',
-            desc: 'lorem ipsum elite sdds',
+            img: './img/tyre/car/car1.png',
+            title: 'Apollo',
+            desc: '195R15 QUANTOM',
             category: 'car'
         },
         {   
             id: 2,
-            img: './img/heavy-duty-truck-tyres-500x500-removebg-preview.png',
-            title: 'apollo',
-            desc: 'lorem ipsum elite sdds',
+            img: './img/tyre/car/car2.png',
+            title: 'Bridgestone',
+            desc: '205R16 D694',
             category: 'car'
         },
         {   
             id: 3,
-            img: './img/tyre/car.png',
-            title: 'Brigestone',
-            desc: 'lorem ipsum elite sdds',
+            img: './img/tyre/car/car3.png',
+            title: 'Bridgestone',
+            desc: '750R16 VSJ',
             category: 'car'
         },
         {   
             id: 4,
-            img: './img/tyre/car.png',
-            title: 'good year',
-            desc: 'lorem ipsum elite sdds',
+            img: './img/tyre/car/car4.png',
+            title: 'Bridgestone',
+            desc: '750R16 M755',
             category: 'car'
         },
         {   
             id: 5,
-            img: './img/tyre/car.png',
-            title: 'good year',
-            desc: 'lorem ipsum elite sdds',
+            img: './img/tyre/car/car5.png',
+            title: 'MRF',
+            desc: '750 16 M77',
             category: 'car'
         },
         {   
             id: 6,
-            img: './img/tyre/car.png',
-            title: 'good year',
-            desc: 'lorem ipsum elite sdds',
+            img: './img/tyre/car/car6.png',
+            title: 'Goodyear',
+            desc: '750 16 M77',
             category: 'car'
         }
     ]
@@ -52,88 +52,88 @@ function datas(){
     const truckProduct = [
         {   
             id: 1,
-            img: './img/heavy-duty-truck-tyres-500x500-removebg-preview.png',
-            title: 'Hancock',
-            desc: 'lorem ipsum elite sdds',
+            img: './img/tyre/truck/truck1.png',
+            title: 'Hankook',
+            desc: '',
             category: 'truck'
         },
         {   
             id: 2,
-            img: './img/tyre/car.png',
-            title: 'apollo',
-            desc: 'lorem ipsum elite sdds',
+            img: './img/tyre/truck/truck2.png',
+            title: 'Apollo',
+            desc: '',
             category: 'truck'
         },
         {   
             id: 3,
-            img: './img/tyre/car.png',
+            img: './img/tyre/truck/truck3.png',
             title: 'Brigestone',
-            desc: 'lorem ipsum elite sdds',
+            desc: '',
             category: 'truck'
         },
         {   
             id: 4,
-            img: './img/tyre/car.png',
-            title: 'good year',
-            desc: 'lorem ipsum elite sdds',
+            img: './img/tyre/truck/truck4.png',
+            title: 'Goodyear',
+            desc: '',
             category: 'truck'
         },
         {   
             id: 5,
-            img: './img/tyre/car.png',
-            title: 'good year',
-            desc: 'lorem ipsum elite sdds',
+            img: './img/tyre/truck/truck5.png',
+            title: 'Goodyear',
+            desc: '',
             category: 'truck'
         },
         {   
             id: 6,
-            img: './img/tyre/car.png',
-            title: 'good year',
-            desc: 'lorem ipsum elite sdds',
+            img: './img/tyre/truck/truck6.png',
+            title: 'Goodyear',
+            desc: '',
             category: 'truck'
         }
     ]
     const heavyProduct = [
         {   
             id: 1,
-            img: './img/tyre/car.png',
-            title: 'Hancock',
-            desc: 'lorem ipsum elite sdds',
+            img: './img/tyre/heavy/heavy1.png',
+            title: 'Triangle',
+            desc: '17.5-25 TL612',
             category: 'heavy'
         },
         {   
             id: 2,
-            img: './img/tyre/car.png',
-            title: 'apollo',
-            desc: 'lorem ipsum elite sdds',
+            img: './img/tyre/heavy/heavy2.png',
+            title: 'Triangle',
+            desc: '1400-24 TL612',
             category: 'heavy'
         },
         {   
             id: 3,
-            img: './img/heavy-duty-truck-tyres-500x500-removebg-preview.png',
-            title: 'Brigestone',
-            desc: 'lorem ipsum elite sdds',
+            img: './img/tyre/heavy/heavy3.png',
+            title: 'Triangle',
+            desc: '1200R20_691',
             category: 'heavy'
         },
         {   
             id: 4,
-            img: './img/tyre/car.png',
-            title: 'good year',
-            desc: 'lorem ipsum elite sdds',
+            img: './img/tyre/heavy/heavy4.png',
+            title: 'Triangle',
+            desc: '23.5-25 TL612',
             category: 'heavy'
         },
         {   
             id: 5,
-            img: './img/tyre/car.png',
-            title: 'good year',
-            desc: 'lorem ipsum elite sdds',
+            img: './img/tyre/heavy/heavy5.png',
+            title: 'Goodyear',
+            desc: '',
             category: 'heavy'
         },
         {   
             id: 6,
-            img: './img/tyre/car.png',
-            title: 'good year',
-            desc: 'lorem ipsum elite sdds',
+            img: './img/tyre/heavy/heavy6.png',
+            title: 'Aeolus',
+            desc: '18.4-30 Forklift',
             category: 'heavy'
         }
     ]
@@ -193,6 +193,7 @@ function mapContent(...args){
             </div>
             <h2>${item.title}</h2>
             <p> ${item.desc}</p>
+            <a class="btn btn-rounded-primary"> Contact Us For Details</a>
             <hr>
         </div>`
          }else if (item.id !== 6){
@@ -203,6 +204,7 @@ function mapContent(...args){
                         </div>
                         <h2>${item.title}</h2>
                         <p> ${item.desc}</p>
+                        <a class="btn btn-rounded-primary"> Contact Us For Details</a>
                         <hr>
                         <div class="line"></div>
                     </div>`
@@ -213,6 +215,7 @@ function mapContent(...args){
             </div>
             <h2>${item.title}</h2>
             <p> ${item.desc}</p>
+            <a class="btn btn-rounded-primary"> Contact Us For Details</a>
          </div>`
          }
     }).join('')

@@ -6,39 +6,39 @@ navBar()
 const productItems = [
     {   
         id: 1,
-        img: './img/heavy-duty-truck-tyres-500x500-removebg-preview.png',
-        title: 'Hancock',
-        desc: 'lorem ipsum elite sdds'
+        img: './img/battery/GS.png',
+        title: 'GS',
+        desc: 'GS 70 AM'
     },
     {
         id: 2,
-        img: './img/platinium_battery-removebg-preview.png',
-        title: 'Platinium',
-        desc: 'lorem ipsum elite sdds'
+        img: './img/tyre/car/car6.png',
+        title: 'Goodyear',
+        desc: '750 16 M77',
     },
     {
         id: 3,
-        img: './img/car_tyre-removebg-preview.png',
-        title: 'Good year',
-        desc: 'lorem ipsum elite sdds'
+        img: './img/tyre/car/car5.png',
+        title: 'MRF',
+        desc: '750 16 M77'
     },
     {
         id: 4,
-        img: './img/truck_tyre2-removebg-preview.png',
-        title: 'Bridgestone',
-        desc: 'lorem ipsum elite sdds'
+        img: './img/battery/X-Pro_100AM.png',
+        title: 'E-XPRO',
+        desc: '100 AM'
     },
     {
         id: 5,
-        img: './img/global2-removebg-preview.png',
-        title: 'Global',
-        desc: 'lorem ipsum elite sdds'
+        img: './img/tyre/truck/truck5.png',
+        title: 'Goodyear',
+        desc: '',
     },
     {
         id: 6,
-        img: './img/hankook-removebg-preview.png',
-        title: 'Apollo',
-        desc: 'lorem ipsum elite sdds'
+        img: './img/tyre/heavy/heavy1.png',
+        title: 'Triangle',
+        desc: '17.5-25 TL612',
     }
 ]
 console.log(productContent);
@@ -50,6 +50,7 @@ let productCard  = productItems.map(item =>{
         </div>
         <h2>${item.title}</h2>
         <p> ${item.desc}</p>
+        <a class="btn btn-rounded-primary"> Contact Us For Details</a>
         <hr>
     </div>`
      }else if (item.id !== 6){
@@ -60,6 +61,7 @@ let productCard  = productItems.map(item =>{
                     </div>
                     <h2>${item.title}</h2>
                     <p> ${item.desc}</p>
+                    <a class="btn btn-rounded-primary"> Contact Us For Details</a>
                     <hr>
                     <div class="line"></div>
                 </div>`
@@ -70,6 +72,7 @@ let productCard  = productItems.map(item =>{
         </div>
         <h2>${item.title}</h2>
         <p> ${item.desc}</p>
+        <a class="btn btn-rounded-primary"> Contact Us For Details</a>
      </div>`
      }
     

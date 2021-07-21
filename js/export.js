@@ -68,7 +68,7 @@ let exportContent = exportProduct.map(item =>{
             <img src="${item.img}" alt="">
         </div>
         <h2>${item.title}</h2>
-        <p> ${item.desc}</p>
+        
         <hr>
     </div>`
      }else if (item.id !== 6 ){
@@ -78,7 +78,7 @@ let exportContent = exportProduct.map(item =>{
                         <img src="${item.img}" alt="">
                     </div>
                     <h2>${item.title}</h2>
-                    <p> ${item.desc}</p>
+                    
                     <hr>
                     <div class="line"></div>
                 </div>`
@@ -88,7 +88,7 @@ let exportContent = exportProduct.map(item =>{
            <img src="${item.img}" alt="">
         </div>
         <h2>${item.title}</h2>
-        <p> ${item.desc}</p>
+        
      </div>`
      }
 }).join('')

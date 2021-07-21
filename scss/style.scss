@@ -219,7 +219,7 @@ html{
   }
 }
 .products{
-  margin-top: 10rem;
+  margin-top: 18rem;
   .container{
     .product-title{
       text-align: center;
@@ -235,7 +235,7 @@ html{
 }
 @include responsive($md){
   .products{
-    margin-top: 10rem;
+    margin-top: 18rem;
     .container{
       .product-title{
         text-align: center;

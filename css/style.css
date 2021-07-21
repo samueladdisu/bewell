@@ -2110,7 +2110,7 @@ nav .container .nav-header .logo {
 }
 
 .products {
-  margin-top: 10rem;
+  margin-top: 18rem;
 }
 
 .products .container .product-title {
@@ -2170,7 +2170,7 @@ nav .container .nav-header .logo {
 
 @media screen and (min-width: 768px) {
   .products {
-    margin-top: 10rem;
+    margin-top: 18rem;
   }
   .products .container .product-title {
     text-align: center;

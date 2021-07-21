@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bewelltradingco.com/sitemap.xml

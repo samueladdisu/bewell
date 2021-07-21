@@ -29,9 +29,9 @@ html{
 .headline{
   z-index: 999999;
   .title{
-    font-size: 3.25rem;
+    font-size: 2.25rem;
     color: #fff;
-    width: 378px;
+    width: 23.625rem;
   }
   a{  
     font-size: 0.75rem;
@@ -43,7 +43,7 @@ html{
       font-size: 2.25rem;
     }
     .title{
-      font-size: 6rem;
+      font-size: 4rem;
       width: 38.13rem;
     }
     a{
@@ -57,7 +57,7 @@ html{
   .headline{
     
     .title{
-      font-size: 5rem;
+      font-size: 4rem;
       width: 38.13rem;
     }
     
@@ -155,11 +155,11 @@ html{
         left: -10rem;
       }
       .about-paragraph{
-        width: auto;
+        width: 22.63rem;
       }
     }
     .about-img{
-      width: auto;
+      width: 50rem;
     }
   }
 }
@@ -249,6 +249,16 @@ html{
         
       }
     }
+  }
+}
+@include responsive($lg){
+  .products{
+    margin-top: 15rem;
+  }
+}
+@include responsive($xl){
+  .products{
+    margin-top: 10rem;
   }
 }
 

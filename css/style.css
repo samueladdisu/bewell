@@ -1514,14 +1514,6 @@ nav .container .nav-header .logo {
   height: 15.57rem;
 }
 
-.export-products .container .export-product-content .product-card .card-img img {
-  transition: all 0.6s linear;
-}
-
-.export-products .container .export-product-content .product-card .card-img:hover img {
-  transform: rotateY(180deg);
-}
-
 .export-products .container .export-product-content .product-card h2 {
   font-size: 1.6rem;
   color: #DF362F;
@@ -1660,7 +1652,7 @@ nav .container .nav-header .logo {
 .contact-header .contact-form {
   width: 100%;
   position: absolute;
-  top: 50%;
+  top: 55%;
 }
 
 .contact-header .contact-form h1 {
@@ -1696,6 +1688,10 @@ nav .container .nav-header .logo {
 .contact-header .contact-form .form button {
   margin: 1.69rem 0;
   width: 12.31rem;
+}
+
+.map {
+  margin-top: 4rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -1940,9 +1936,9 @@ nav .container .nav-header .logo {
 }
 
 .headline .title {
-  font-size: 3.25rem;
+  font-size: 2.25rem;
   color: #fff;
-  width: 378px;
+  width: 23.625rem;
 }
 
 .headline a {
@@ -1954,7 +1950,7 @@ nav .container .nav-header .logo {
     font-size: 2.25rem;
   }
   .headline .title {
-    font-size: 6rem;
+    font-size: 4rem;
     width: 38.13rem;
   }
   .headline a {
@@ -1965,7 +1961,7 @@ nav .container .nav-header .logo {
 
 @media screen and (min-width: 992px) {
   .headline .title {
-    font-size: 5rem;
+    font-size: 4rem;
     width: 38.13rem;
   }
 }
@@ -2061,10 +2057,10 @@ nav .container .nav-header .logo {
     left: -10rem;
   }
   .about-us .about-content .about-paragraph {
-    width: auto;
+    width: 22.63rem;
   }
   .about-us .about-img {
-    width: auto;
+    width: 50rem;
   }
 }
 
@@ -2197,6 +2193,18 @@ nav .container .nav-header .logo {
     background: #D2D7D1;
     width: 0.13rem;
     height: 10.25rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .products {
+    margin-top: 15rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .products {
+    margin-top: 10rem;
   }
 }
 

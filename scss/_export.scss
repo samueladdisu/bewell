@@ -10,7 +10,44 @@
       .export-product-content{
         .product-card{
           
-          @include cardStyles;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 2rem;
+          .card-img{
+            margin: 2.38rem 0 2.13em;
+            width: auto;
+            height: 15.57rem;
+           
+          }
+          
+          h2{
+            font-size: 1.6rem;
+            color: $primary-color;
+            padding-bottom: 0.75em;
+            font-family: 'Gelasio', serif;
+          }
+          p{
+            font-size: 1rem;
+            color: $secondary-color;
+            padding-bottom: 1.44rem;
+            
+          }
+          a{
+            visibility: hidden;
+            transition: all 0.3s linear;
+            
+          }
+          hr{
+            width: 80%;
+            height: 0.13rem;
+            border: none;
+            background: $light-color;
+          }
+          &:hover a{
+          visibility: visible;
+        }
           
         }
       }

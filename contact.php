@@ -10,7 +10,7 @@
         $msg = $_POST['msg'];
 
         if ( mail($to, $subject, $msg, $header)) {
-            echo("Email successfully sent to $to...");
+            header('Location: ./contact.html');
          } else {
             echo("Email sending failed...");
          }

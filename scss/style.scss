@@ -10,7 +10,9 @@ $font: 'Inter', sans-serif;
 div[class^="col-"] , .col{
   padding: 1rem 0;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 .section-title{
   font-size: 2.25rem;
   text-transform: capitalize;

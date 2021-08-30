@@ -152,4 +152,48 @@ let testContent = testimonialContent.map(items =>{
 })
 
 testimonial.innerHTML = testContent.join('');
+const exportProductContent = document.querySelector('.export-product-content')
+const exportProduct = [
+    {   
+        id: 1,
+        img: './img/sesame-seeds 1.png',
+        title: 'Sesame seed',
+        desc: 'lorem ipsum elite sdds'
+    },
+    {   
+        id: 2,
+        img: './img/coffee.png',
+        title: 'coffee',
+        desc: 'lorem ipsum elite sdds'
+    },
+    {   
+        id: 3,
+        img: './img/red-kidney-beans.png',
+        title: 'Red Kidney Beans',
+        desc: 'lorem ipsum elite sdds'
+    }
+]
+let exportContent = exportProduct.map(item =>{
+    if (item.id == 3 ){
+        return `<div class="product-card col-10 col-offset-1 ">
+        <div class="card-img">
+            <img src="${item.img}" alt="">
+        </div>
+        <h2>${item.title}</h2>
+        
+        <hr>
+    </div>`
+     }else if(item.id !== 3){
 
+         return `<div class="product-card col-10 col-offset-1 ">
+                    <div class="card-img">
+                        <img src="${item.img}" alt="">
+                    </div>
+                    <h2>${item.title}</h2>
+                    
+                    <hr>
+                    <div class="line"></div>
+                </div>`
+     }
+}).join('')
+exportProductContent.innerHTML = exportContent

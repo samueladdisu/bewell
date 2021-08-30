@@ -1,5 +1,5 @@
 <?php
-    echo $_POST["submit"];
+    // echo $_POST["submit"];
     if(isset($_POST['submit'])){
 
         echo 'form submitted';

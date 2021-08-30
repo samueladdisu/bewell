@@ -1496,6 +1496,10 @@ nav .container .nav-header .logo {
   margin-bottom: 6.5rem;
 }
 
+.export-products .container .btn-container {
+  text-align: center;
+}
+
 .export-products .container .product-title {
   text-align: center;
 }
@@ -1551,6 +1555,7 @@ nav .container .nav-header .logo {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
   }
   .export-products .container .export-product-content .product-card {
     position: relative;

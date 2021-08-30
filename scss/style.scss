@@ -79,7 +79,9 @@ html{
   .about-content{
     margin-top: 5.36rem;
     position: relative;
-    
+    .container{
+      padding-top: 4rem;
+    }
     .about-paragraph{
       font-size: 1rem;
       font-weight: 400;
@@ -120,6 +122,8 @@ html{
     .about-content{
       width: 44.88rem;
       margin: 0;
+      .container{
+      }
       .grahic{
         overflow: visible;
         top: -9rem;

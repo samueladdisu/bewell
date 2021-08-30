@@ -1986,6 +1986,10 @@ nav .container .nav-header .logo {
   position: relative;
 }
 
+.about-us .about-content .container {
+  padding-top: 4rem;
+}
+
 .about-us .about-content .about-paragraph {
   font-size: 1rem;
   font-weight: 400;

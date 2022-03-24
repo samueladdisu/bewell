@@ -1657,7 +1657,7 @@ nav .container .nav-header .logo {
 .contact-header .contact-form {
   width: 100%;
   position: absolute;
-  top: 55%;
+  top: 70%;
 }
 
 .contact-header .contact-form h1 {
@@ -1696,12 +1696,12 @@ nav .container .nav-header .logo {
 }
 
 .map {
-  margin-top: 4rem;
+  margin-top: 25rem;
 }
 
 @media screen and (min-width: 768px) {
   .map {
-    margin-top: 3.44rem;
+    margin-top: 6.44rem;
   }
   .contact-header {
     height: 60.56rem;
